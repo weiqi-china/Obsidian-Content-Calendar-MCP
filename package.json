@@ -1,0 +1,54 @@
+{
+  "name": "obsidian-content-calendar-mcp",
+  "version": "1.0.0",
+  "description": "An MCP server that turns your Obsidian vault into an AI-powered content calendar.",
+  "type": "module",
+  "bin": {
+    "obsidian-content-calendar-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "obsidian",
+    "mcp",
+    "mcp-server",
+    "content-calendar",
+    "claude-mcp",
+    "ai-workflow",
+    "content-planning",
+    "obsidian-mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "date-fns": "^4.1.0",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.1",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.6.2",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
