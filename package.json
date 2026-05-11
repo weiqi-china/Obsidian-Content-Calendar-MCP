@@ -1,6 +1,6 @@
 {
   "name": "obsidian-content-calendar-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An MCP server that turns your Obsidian vault into an AI-powered content calendar for Claude Desktop, Cursor, Cline and ChatGPT.",
   "type": "module",
   "bin": {
